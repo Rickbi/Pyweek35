@@ -20,9 +20,9 @@ py scr
 ```
 
 ## Requirements:
-Python version 3.10.4
-pyxel version 1.9.13
-- The game was only tested on these versions
+- Python version 3.10.4
+- Pyxel version 1.9.13
+The game was only tested on these versions
 
 ## How to Play
 

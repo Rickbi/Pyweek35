@@ -1,23 +1,12 @@
-Title:
-The almighty sun
+#The Almighty Sun
 
-You are in a desert [planet], water scarce, the shadow change with time, you need to found a way out of this mess.
-
+## Description
+Entry for the PyWeek 35 Game Jam, the theme is 'In the shadows'. https://pyweek.org/e/RicBin35/
+You are in a desert planet, water scarce, the shadow move with time, you need to found a way out of this mess.
 
 Survivor game in a desert.
 Collect water to survive.
 Hide from the sun in the shadows.
-Move fast the sun moves making your hide spot usless.
-
-
-
-#The Almighty Sun
-
-## Description
-Entry for the PyWeek 35 Game Jam, the theme is 'In the shadows'.
-{https://pyweek.org/e/RicBin35/}
-
-
 
 ## Game Play
 TBD

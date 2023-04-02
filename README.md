@@ -1,5 +1,6 @@
 # The Almighty Sun
 
+
 ## Description
 Entry for the PyWeek 35 Game Jam, the theme is 'In the shadows'.
 
@@ -11,8 +12,10 @@ Survivor game in a desert.
 Collect water to survive.
 Hide from the sun in the shadows.
 
+
 ## Game Play
 TBD
+
 
 ## How to run
 To run, install all the dependencies from `requirements.txt`. You can use the following steps.
@@ -22,13 +25,26 @@ pip install -r requirements.txt
 py scr
 ```
 
+
 ## Requirements:
 - Python version 3.10.4
 - Pyxel version 1.9.13
 
 The game was only tested on these versions
 
+
 ## How to Play
+Move with the `UP`, `DOWN`, `LEFT` and `RIGHT` arrows
+
+Press `ESC` to exit
+
+Press `Alt` + `ENTER` to fullscreen
+
+Watch your WATER LEVEL, it will drop down with time, to refill it you can search for water bottles.
+
+The sun will make thirty, so try to avoid it and hide in the shadows.
+
+Find the RADIO to escape the desert
 
 
 ## Assets

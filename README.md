@@ -6,11 +6,7 @@ Entry for the PyWeek 35 Game Jam, the theme is 'In the shadows'.
 
 https://pyweek.org/e/RicBin35/
 
-You are in a desert planet, water scarce, the shadow move with time, you need to found a way out of this mess.
-
-Survivor game in a desert.
-Collect water to survive.
-Hide from the sun in the shadows.
+You are in a desert planet, water scarce, the shadow move, you need to found a way out of this mess. A survivor game where you will need to collect water and hide from the sun in the shadows to survive.
 
 
 ## Game Play

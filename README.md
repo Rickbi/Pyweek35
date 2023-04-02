@@ -1,4 +1,4 @@
-#The Almighty Sun
+# The Almighty Sun
 
 ## Description
 Entry for the PyWeek 35 Game Jam, the theme is 'In the shadows'. https://pyweek.org/e/RicBin35/

@@ -9,11 +9,37 @@ Collect water to survive.
 Hide from the sun in the shadows.
 Move fast the sun moves making your hide spot usless.
 
-If time are left:
-Be careful of the enemies.
-Build a umbrella to travel far distances.
 
 
-To do:
-Map
-Title Screens
+#The Almighty Sun
+
+## Description
+	Entry for the PyWeek 35 Game Jam, the theme is 'In the shadows'.
+	{https://pyweek.org/e/RicBin35/}
+	
+	
+	
+## Game Play
+TBD
+
+## How to run
+	To run, install all the dependencies from `requirements.txt`. You can use the following steps.
+
+	```py
+	pip install -r requirements.txt
+	py scr
+	```
+	
+## Requirements:
+	Python version 3.10.4
+	pyxel version 1.9.13
+	- The game was only tested on these versions
+
+## How to Play
+	
+
+## Assets
+	All the assets were made by me, using the Pyxels Image and Sound Editors
+
+	
+## Thanks for Playing

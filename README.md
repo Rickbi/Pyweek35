@@ -1,5 +1,6 @@
 # The Almighty Sun
 
+!Title Screen](TitleScreen.png)
 
 ## Description
 Entry for the PyWeek 35 Game Jam, the theme is 'In the shadows'.

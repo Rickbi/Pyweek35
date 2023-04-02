@@ -1,7 +1,10 @@
 # The Almighty Sun
 
 ## Description
-Entry for the PyWeek 35 Game Jam, the theme is 'In the shadows'. https://pyweek.org/e/RicBin35/
+Entry for the PyWeek 35 Game Jam, the theme is 'In the shadows'.
+
+https://pyweek.org/e/RicBin35/
+
 You are in a desert planet, water scarce, the shadow move with time, you need to found a way out of this mess.
 
 Survivor game in a desert.
@@ -22,6 +25,7 @@ py scr
 ## Requirements:
 - Python version 3.10.4
 - Pyxel version 1.9.13
+
 The game was only tested on these versions
 
 ## How to Play

@@ -6,7 +6,7 @@ Entry for the PyWeek 35 Game Jam, the theme is 'In the shadows'.
 
 https://pyweek.org/e/RicBin35/
 
-You are in a desert planet, water scarce, the shadow move, you need to found a way out of this mess. A survivor game where you will need to collect water and hide from the sun in the shadows to survive.
+You are in a desert planet, water scarce, the shadow move, you need to find a way out of this mess. A survivor game where you will need to collect water and hide from the sun in the shadows to survive.
 
 
 ## Game Play
@@ -34,11 +34,11 @@ Move with the `UP`, `DOWN`, `LEFT` and `RIGHT` arrows
 
 Press `ESC` to exit
 
-Press `Alt` + `ENTER` to fullscreen
+Press `Alt` + `ENTER` to Fullscreen
 
 Watch your WATER LEVEL, it will drop down with time, to refill it you can search for water bottles.
 
-The sun will make thirty, so try to avoid it and hide in the shadows.
+The sun will make you thirsty, so try to avoid it and hide in the shadows.
 
 Find the RADIO to escape the desert
 

@@ -11,7 +11,7 @@ You are in a desert planet, water scarce, the shadow move, you need to find a wa
 
 
 ## Play it in the browser
-![Play](https://rickbi.github.io/Pyweek35/)
+[Play](https://rickbi.github.io/Pyweek35/)
 
 ## Game Play
 https://youtu.be/8u4ICssIMak

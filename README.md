@@ -10,6 +10,9 @@ https://pyweek.org/e/RicBin35/
 You are in a desert planet, water scarce, the shadow move, you need to find a way out of this mess. A survivor game where you will need to collect water and hide from the sun in the shadows to survive.
 
 
+## Play it in the browser
+![Play](https://rickbi.github.io/Pyweek35/)
+
 ## Game Play
 https://youtu.be/8u4ICssIMak
 

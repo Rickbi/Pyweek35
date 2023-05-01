@@ -59,36 +59,37 @@ class Player:
             self.win = True
 
         elif self.checkCollitions(self.x, self.y, [(0,4)]):
-            self.heat += 2
+            self.heat += 1
 
         elif self.checkCollitions(self.x, self.y, [(1,3)]):
-            self.heat -= 0.9
+            self.heat += 0.1
+        
+        else:
+            self.heat += 0.5
 
         newY = self.y
         newX = self.x
         self.walking = False
 
-        if pyxel.btnp(pyxel.KEY_UP, hold=self.hold, repeat=self.repeat):
+        if pyxel.btnp(pyxel.KEY_UP, hold=self.hold, repeat=self.repeat) or pyxel.btnp(pyxel.KEY_W, hold=self.hold, repeat=self.repeat) or pyxel.btnp(pyxel.GAMEPAD1_BUTTON_DPAD_UP, hold=self.hold, repeat=self.repeat):
             newY -= self.vel
             self.walking = True
-        if pyxel.btnp(pyxel.KEY_DOWN, hold=self.hold, repeat=self.repeat):
+        if pyxel.btnp(pyxel.KEY_DOWN, hold=self.hold, repeat=self.repeat) or pyxel.btnp(pyxel.KEY_S, hold=self.hold, repeat=self.repeat) or pyxel.btnp(pyxel.GAMEPAD1_BUTTON_DPAD_DOWN, hold=self.hold, repeat=self.repeat):
             newY += self.vel
             self.walking = True
         
         if not self.checkCollitions(self.x, newY, [(0,2), (1,2), (2,2), (3,2), (4,2), (5,2), (6,2), (7,2)]):
             self.y = newY
 
-        if pyxel.btnp(pyxel.KEY_LEFT, hold=self.hold, repeat=self.repeat):
+        if pyxel.btnp(pyxel.KEY_LEFT, hold=self.hold, repeat=self.repeat) or pyxel.btnp(pyxel.KEY_A, hold=self.hold, repeat=self.repeat) or pyxel.btnp(pyxel.GAMEPAD1_BUTTON_DPAD_LEFT, hold=self.hold, repeat=self.repeat):
             newX -= self.vel
             self.walking = True
-        if pyxel.btnp(pyxel.KEY_RIGHT, hold=self.hold, repeat=self.repeat):
+        if pyxel.btnp(pyxel.KEY_RIGHT, hold=self.hold, repeat=self.repeat) or pyxel.btnp(pyxel.KEY_D, hold=self.hold, repeat=self.repeat) or pyxel.btnp(pyxel.GAMEPAD1_BUTTON_DPAD_RIGHT, hold=self.hold, repeat=self.repeat):
             newX += self.vel
             self.walking = True
         
         if not self.checkCollitions(newX, self.y, [(0,2), (1,2), (2,2), (3,2), (4,2), (5,2), (6,2), (7,2)]):
             self.x = newX
-        
-        self.heat += 1
 
     def draw(self):
         # Animate
@@ -166,7 +167,7 @@ class Game:
         self.water = []
         self.mapW = 96
         self.mapH = 80
-        self.waterMax = 50
+        self.waterMax = 100
 
         pyxel.init(w, h, title="The Almighty Sun", fps=60, display_scale=7, capture_scale=1, capture_sec=5)
         
@@ -273,7 +274,7 @@ class Game:
         pyxel.text(7,80, "Press:\nSPACE to play\nUP to How to Play", 0)
 
     def updateTitle(self):
-        if pyxel.btnr(pyxel.KEY_SPACE):
+        if pyxel.btnr(pyxel.KEY_SPACE) or pyxel.btnr(pyxel.GAMEPAD1_BUTTON_A) or pyxel.btnr(pyxel.GAMEPAD1_BUTTON_B) or pyxel.btnr(pyxel.GAMEPAD1_BUTTON_X) or pyxel.btnr(pyxel.GAMEPAD1_BUTTON_Y):
             self.state = 1
             self.player.water = self.player.waterMax
             self.player.x = self.ix*8
@@ -289,7 +290,7 @@ class Game:
             self.player.map = 0
             self.addWater(self.waterMax)
 
-        elif pyxel.btnr(pyxel.KEY_UP):
+        elif pyxel.btnr(pyxel.KEY_UP) or pyxel.btnr(pyxel.GAMEPAD1_BUTTON_DPAD_UP):
             self.state = 4
    
     def drawHowToPlay(self):
@@ -326,7 +327,7 @@ class Game:
                    0)
 
     def updateHowToPlay(self):
-        if pyxel.btnr(pyxel.KEY_DOWN):
+        if pyxel.btnr(pyxel.KEY_DOWN) or pyxel.btnr(pyxel.GAMEPAD1_BUTTON_DPAD_DOWN):
             self.state = 0
 
     def drawGameOver(self):
@@ -342,7 +343,7 @@ class Game:
         pyxel.text(40, 20, text, 0)
     
     def updateGameOver(self):
-        if pyxel.btnr(pyxel.KEY_SPACE):
+        if pyxel.btnr(pyxel.KEY_SPACE) or pyxel.btnr(pyxel.GAMEPAD1_BUTTON_A) or pyxel.btnr(pyxel.GAMEPAD1_BUTTON_B) or pyxel.btnr(pyxel.GAMEPAD1_BUTTON_X) or pyxel.btnr(pyxel.GAMEPAD1_BUTTON_Y):
             self.state = 0
     
     def drawGameWin(self):
@@ -356,7 +357,7 @@ class Game:
         pyxel.text(40, 20, text, 0)
     
     def updateGameWin(self):
-        if pyxel.btnr(pyxel.KEY_SPACE):
+        if pyxel.btnr(pyxel.KEY_SPACE) or pyxel.btnr(pyxel.GAMEPAD1_BUTTON_A) or pyxel.btnr(pyxel.GAMEPAD1_BUTTON_B) or pyxel.btnr(pyxel.GAMEPAD1_BUTTON_X) or pyxel.btnr(pyxel.GAMEPAD1_BUTTON_Y):
             self.state = 0
     
     def moveCam(self):
@@ -418,7 +419,7 @@ class Game:
             if w.checkCollitions(self.player.x, self.player.y, self.player.w, self.player.h):
                 if self.player.water < self.player.waterMax:
                     self.player.water += 1
-                    self.player.heat = 0
+                    self.player.heat = -self.player.loseRate/2
                     self.water.remove(w)
                     pyxel.play(3, 5)
 
